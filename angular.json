@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PB02": {
+    "ayudantiaFrontendIDWM_ANGULAR18": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/pb02",
+            "outputPath": "dist/ayudantia-frontend-idwm-angular18",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -41,8 +41,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "2kB",
+                  "maximumError": "4kB"
                 }
               ],
               "outputHashing": "all"
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "PB02:build:production"
+              "buildTarget": "ayudantiaFrontendIDWM_ANGULAR18:build:production"
             },
             "development": {
-              "buildTarget": "PB02:build:development"
+              "buildTarget": "ayudantiaFrontendIDWM_ANGULAR18:build:development"
             }
           },
           "defaultConfiguration": "development"

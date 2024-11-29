@@ -1,0 +1,11 @@
+<div class="search-bar">
+  <input type="text" [(ngModel)]="searchQuery" (input)="searchCharacters()" placeholder="Search characters...">
+</div>
+<app-button01> </app-button01>
+<app-card [characters]="characters"> </app-card>
+<app-search-bar> </app-search-bar>
+<div class="pagination">
+  <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+  <span>Page {{currentPage}} of {{totalPages}}</span>
+  <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+</div>
